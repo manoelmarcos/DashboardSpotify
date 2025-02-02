@@ -9,7 +9,6 @@ Passo a passo:
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
 
-
 ## Certifique-se de que o Python esteja corretamente instalado
 
 1. Vá para o prompt de command (Windows + R)
@@ -36,15 +35,6 @@ Rode o código Python diretamente (sem PowerShell, se possível).
 
    ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
-5. Crie uma aplicação no Spotify Developer Dashboard para obter o Client ID e Client Secret.
-
-fig1
-![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
-
-fig3
-![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
-
-
 6. Instalar o pacote necessário no ambiente Python do Power BI:
 
 Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
@@ -59,6 +49,26 @@ where python
 2. Certifique-se de que as bibliotecas requests e o pandas estão instalados:
 
 pip install requests pandas
+
+
+
+## Crie uma aplicação no Spotify Developer Dashboard 
+
+- Acesse Spotify Developer Dashboard.
+- Faça login com sua conta do Spotify.
+- Clique em "Create an App".
+- Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
+- Clique em "Create" e aceite os termos.
+
+
+Para obter o Client ID e Client Secret, acesse: 
+
+fig1
+![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
+
+fig3
+![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
+
 
 
 Verificar o ambiente Python no Power BI:
