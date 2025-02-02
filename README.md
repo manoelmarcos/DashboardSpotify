@@ -12,7 +12,8 @@ Rode o código Python diretamente (sem PowerShell, se possível).
 
 ## Certifique-se de que o Python esteja corretamente instalado
 
-Vá para o prompt de command (Windows + R)
+1. Vá para o prompt de command (Windows + R)
+   
    ![image](https://github.com/user-attachments/assets/82c72a48-f969-4f1d-9d1a-a7c13545b63d)
 
 
