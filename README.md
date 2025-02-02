@@ -13,8 +13,32 @@ Certifique-se de que o Python esteja corretamente instalado e que você esteja e
 
 Instale a biblioteca spotipy:
 
-1. Acesse o prompt de comando (win + R), cmd
-2. pip install spotipy
+1️⃣ Certifique-se de que o python está instalado corretamente em sua máquina:
+
+Vá para o prompt de command (Windows + R)
+   ![image](https://github.com/user-attachments/assets/82c72a48-f969-4f1d-9d1a-a7c13545b63d)
+
+
+2. digite: python --version
+
+   ![image](https://github.com/user-attachments/assets/75110f6e-c0f6-423e-8faf-e28f09aab68a)
+
+
+3. Se o python não estiver instalado, siga esses passos:
+
+   Baixe o Instalador
+      Acesse o site oficial do Python:
+         🔗 https://www.python.org/downloads/
+   Clique no botão Download Python X.X.X (a versão mais recente disponível).
+   Abra o arquivo .exe que foi baixado.
+   Marque a opção "Add Python to PATH" (para poder rodar Python no terminal).
+   Clique em Install Now e aguarde.
+
+4. Instale a biblioteca spotipy:
+
+   ![image](https://github.com/user-attachments/assets/660cff2b-cc76-41f4-a8e1-d751b7a79cb9)
+
+   
 
 ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
@@ -23,20 +47,24 @@ Instale a biblioteca spotipy:
 fig1
 ![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
 
-fig2
-![image](https://github.com/user-attachments/assets/717b5d6f-50d2-491a-924d-fb8f25eefff8)
-
 fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
 
-Passos para corrigir:
-Instalar o pacote necessário no ambiente Python do Power BI:
+4. Instalar o pacote necessário no ambiente Python do Power BI:
 
 Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
 
-
 pip install matplotlib pandas
+
+5. Verifique o caminho que o Python está instalado:
+
+![image](https://github.com/user-attachments/assets/b0d65726-5e2e-4407-962f-867db9a76d47)
+
+2. Certifique-se de que as bibliotecas requests e o pandas estão instalados:
+
+pip install requests pandas
+
 
 Verificar o ambiente Python no Power BI:
 
@@ -46,22 +74,6 @@ No Power BI, vá em Arquivo > Opções e configurações > Opções.
 Em Opções, navegue até Script Python.
 Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
 
-Passo 1: Instalar o pacote requests no Python
-Instalar via PIP:
-Abra o terminal do seu sistema (como Prompt de Comando no Windows ou terminal no Linux/Mac).
-
-Execute o seguinte comando para instalar o pacote requests:
-
-pip install requests
-
-
-2. Certifique-se de que o requests e o pandas estão instalados:
-O erro pode estar relacionado à falta de bibliotecas no ambiente Python configurado no Power BI. Para garantir que as bibliotecas necessárias estejam instaladas, execute os seguintes comandos no terminal:
-
-bash
-Copiar
-Editar
-pip install requests pandas
 
 
 1️⃣ Crie um aplicativo no Spotify Developer
@@ -98,7 +110,6 @@ Vá até "Edit Settings".
 Em "Redirect URIs", adicione:
 http://localhost:8888/callback
 Clique em Save.
-
 
 
 5. Clique no app criado:
