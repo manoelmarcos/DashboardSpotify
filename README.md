@@ -36,13 +36,9 @@ Vá para o prompt de command (Windows + R)
 
 4. Instale a biblioteca spotipy:
 
-   ![image](https://github.com/user-attachments/assets/660cff2b-cc76-41f4-a8e1-d751b7a79cb9)
+   ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
-   
-
-![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
-
-3. Crie uma aplicação no Spotify Developer Dashboard para obter o Client ID e Client Secret.
+5. Crie uma aplicação no Spotify Developer Dashboard para obter o Client ID e Client Secret.
 
 fig1
 ![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
@@ -51,7 +47,7 @@ fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
 
-4. Instalar o pacote necessário no ambiente Python do Power BI:
+6. Instalar o pacote necessário no ambiente Python do Power BI:
 
 Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
 
@@ -59,6 +55,7 @@ pip install matplotlib pandas
 
 5. Verifique o caminho que o Python está instalado:
 
+where python
 ![image](https://github.com/user-attachments/assets/b0d65726-5e2e-4407-962f-867db9a76d47)
 
 2. Certifique-se de que as bibliotecas requests e o pandas estão instalados:
@@ -73,7 +70,6 @@ O Power BI usa o Python que está instalado no seu computador. Certifique-se de 
 No Power BI, vá em Arquivo > Opções e configurações > Opções.
 Em Opções, navegue até Script Python.
 Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
-
 
 
 1️⃣ Crie um aplicativo no Spotify Developer
@@ -131,14 +127,10 @@ Clique em Save.
 8. 
 
 
-
-
-
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
 
 5. Use um editor de texto ou de código para criar o seguinte código:
-
 
 
 1️⃣ Criar um Script Python no Power BI
