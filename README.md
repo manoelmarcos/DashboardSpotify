@@ -20,12 +20,13 @@ Instale a biblioteca spotipy:
 
 3. Crie uma aplicação no Spotify Developer Dashboard para obter o Client ID e Client Secret.
 
+fig1
 ![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
 
-
+fig2
 ![image](https://github.com/user-attachments/assets/717b5d6f-50d2-491a-924d-fb8f25eefff8)
 
-
+fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
 
