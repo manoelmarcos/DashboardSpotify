@@ -8,12 +8,9 @@ Passos:
 Passo a passo:
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
-Certifique-se de que o Python esteja corretamente instalado e que você esteja executando o script em um ambiente Python.
 
 
-Instale a biblioteca spotipy:
-
-1️⃣ Certifique-se de que o python está instalado corretamente em sua máquina:
+## Certifique-se de que o Python esteja corretamente instalado
 
 Vá para o prompt de command (Windows + R)
    ![image](https://github.com/user-attachments/assets/82c72a48-f969-4f1d-9d1a-a7c13545b63d)
@@ -34,7 +31,7 @@ Vá para o prompt de command (Windows + R)
    Marque a opção "Add Python to PATH" (para poder rodar Python no terminal).
    Clique em Install Now e aguarde.
 
-4. Instale a biblioteca spotipy:
+##  Instale a biblioteca spotipy:
 
    ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
