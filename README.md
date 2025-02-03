@@ -7,7 +7,7 @@ Passo a passo:
 
 ## Certifique-se de que o Python esteja corretamente instalado
 
-1. Vá para o prompt de command (Windows + R)
+1. Abra o Prompt de Comando (Win + R, digite cmd e pressione Enter).
    
    ![image](https://github.com/user-attachments/assets/82c72a48-f969-4f1d-9d1a-a7c13545b63d)
 
@@ -48,17 +48,17 @@ where python
 - Acesse Spotify Developer Dashboard.
 - Faça login com sua conta do Spotify.
 - Clique em "Create an App".
+
+![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
+
+
 - Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
 - Clique em "Create" e aceite os termos.
 
 Para obter o Client ID e Client Secret, acesse: 
 
-fig1
-![image](https://github.com/user-attachments/assets/9d8fc2f5-bec3-4f40-9aa5-4c6ea77eedde)
-
 fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
-
 
 # Verificar o ambiente Python no Power BI:
 
@@ -67,15 +67,6 @@ O Power BI usa o Python que está instalado no seu computador. Certifique-se de 
 No Power BI, vá em Arquivo > Opções e configurações > Opções.
 Em Opções, navegue até Script Python.
 Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
-
-
-# Crie um aplicativo no Spotify Developer
-- Acesse Spotify Developer Dashboard.
-- Faça login com sua conta do Spotify.
-- Clique em "Create an App".
-- Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
-- Clique em "Create" e aceite os termos.
-
 
 Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
 
