@@ -3,11 +3,7 @@ Dashboard Spotify no Power BI
 
 Para integrar os dados dos artistas mais ouvidas no Spotify com o Power BI, você pode usar a API do Spotify para obter as informações e, em seguida, criar uma tabela no Power BI. O script em Python a seguir utiliza a biblioteca spotipy, que é uma forma simples de acessar a API do Spotify.
 
-Passos:
-
 Passo a passo:
-Abra o terminal ou Prompt de Comando.
-Rode o código Python diretamente (sem PowerShell, se possível).
 
 ## Certifique-se de que o Python esteja corretamente instalado
 
@@ -15,31 +11,31 @@ Rode o código Python diretamente (sem PowerShell, se possível).
    
    ![image](https://github.com/user-attachments/assets/82c72a48-f969-4f1d-9d1a-a7c13545b63d)
 
-
 2. digite: python --version
 
    ![image](https://github.com/user-attachments/assets/75110f6e-c0f6-423e-8faf-e28f09aab68a)
 
-
 3. Se o python não estiver instalado, siga esses passos:
 
-   Baixe o Instalador
-      Acesse o site oficial do Python:
+   - Baixe o Instalador
+   - Acesse o site oficial do Python:
          🔗 https://www.python.org/downloads/
-   Clique no botão Download Python X.X.X (a versão mais recente disponível).
-   Abra o arquivo .exe que foi baixado.
-   Marque a opção "Add Python to PATH" (para poder rodar Python no terminal).
-   Clique em Install Now e aguarde.
+   - Clique no botão Download Python X.X.X (a versão mais recente disponível).
+   - Abra o arquivo .exe que foi baixado.
+   - Marque a opção "Add Python to PATH" (para poder rodar Python no terminal).
+   - Clique em Install Now e aguarde.
 
-##  Instale a biblioteca spotipy:
+##  Instale as bibliotecas necessárias
+
+pip install spotipy
 
    ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
-6. Instalar o pacote necessário no ambiente Python do Power BI:
+Instalar o pacote necessário no ambiente Python do Power BI:
 
 Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
 
-pip install matplotlib pandas
+pip install matplotlib pandas requests
 
 5. Verifique o caminho que o Python está instalado:
 
@@ -51,7 +47,6 @@ where python
 pip install requests pandas
 
 
-
 ## Crie uma aplicação no Spotify Developer Dashboard 
 
 - Acesse Spotify Developer Dashboard.
@@ -60,7 +55,6 @@ pip install requests pandas
 - Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
 - Clique em "Create" e aceite os termos.
 
-
 Para obter o Client ID e Client Secret, acesse: 
 
 fig1
@@ -68,7 +62,6 @@ fig1
 
 fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
-
 
 
 Verificar o ambiente Python no Power BI:
@@ -81,11 +74,11 @@ Verifique o caminho do Python que está configurado no Power BI e garanta que se
 
 
 1️⃣ Crie um aplicativo no Spotify Developer
-Acesse Spotify Developer Dashboard.
-Faça login com sua conta do Spotify.
-Clique em "Create an App".
-Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
-Clique em "Create" e aceite os termos.
+- Acesse Spotify Developer Dashboard.
+- Faça login com sua conta do Spotify.
+- Clique em "Create an App".
+- Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
+- Clique em "Create" e aceite os termos.
 
 
 Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
@@ -132,8 +125,6 @@ Clique em Save.
 
 ![image](https://github.com/user-attachments/assets/4132a9d7-c128-4cf7-84f1-b61225237fda)
 
-8. 
-
 
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
@@ -146,8 +137,8 @@ No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
 Clique em Nova Fonte → Script do Python.
 Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
 
+## Verifique se o Python está corretamente instalado no Power BI
 
-✅ 1. Verifique se o Python está corretamente instalado no Power BI
 No Power BI, vá em "Arquivo" → "Opções e Configurações" → "Opções".
 Vá até "Scripts do Python".
 Em "Detecção automática", verifique se o Power BI está reconhecendo seu Python instalado.
@@ -158,9 +149,6 @@ Se necessário, selecione manualmente o caminho onde o Python está instalado.
 ✅ 5. Atualize os Pacotes do Python
 No terminal, rode os comandos abaixo para garantir que suas bibliotecas estão atualizadas:
 
-sh
-Copiar
-Editar
 pip install --upgrade requests pandas
 
 
@@ -174,6 +162,8 @@ No Editor de Consultas, clique em Transformar Dados > Script Python.
 Cole o código Python adaptado no campo de script.
 
 
+Abra o terminal ou Prompt de Comando.
+Rode o código Python diretamente (sem PowerShell, se possível).
 
 
 
