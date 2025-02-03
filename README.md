@@ -55,6 +55,12 @@ where python
 
 
 - Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
+- Configure o Redirect URI
+- O Redirect URI é necessário para autenticar seu usuário no Spotify.
+- Em "Redirect URIs", adicione:
+- http://localhost:8888/callback
+- Clique em Save.
+
 - Clique em "Create" e aceite os termos.
 
 Para obter o Client ID e Client Secret, acesse: 
@@ -65,15 +71,8 @@ Para obter o Client ID e Client Secret, acesse:
 No dashboard, clique no app que você criou.
 Vá até a aba "Settings".
 Copie o Client ID e o Client Secret.
-
-3️⃣ Configure o Redirect URI
-O Redirect URI é necessário para autenticar seu usuário no Spotify.
-
 No dashboard do Spotify, clique no seu app.
 Vá até "Edit Settings".
-Em "Redirect URIs", adicione:
-http://localhost:8888/callback
-Clique em Save.
 
 
 5. Clique no app criado:
@@ -94,7 +93,6 @@ Clique em Save.
 
 
 
-
 # Verificar o ambiente Python no Power BI:
 
 O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
@@ -109,12 +107,10 @@ Para gerar um token com o escopo user-top-read no Spotify, siga este passo a pas
 Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
 
 
-
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
 
 6. Salve os seguintes scripts
-
 
 
 5. Use um editor de texto ou de código para criar o seguinte código:
@@ -124,6 +120,8 @@ Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do 
 No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
 Clique em Nova Fonte → Script do Python.
 Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
+
+
 
 ## Verifique se o Python está corretamente instalado no Power BI
 
