@@ -229,7 +229,7 @@ app.listen(port, () => {
 
 Execute esse script como o Node:
 
-(Verifique se o Note está instalado)
+(Verifique se o node está instalado)
 
 ![image](https://github.com/user-attachments/assets/ddbe9e9d-c13a-4c0a-b303-1f880a54b481)
 
@@ -256,7 +256,15 @@ print("Acesse este link para autorizar:", auth_url)
 
 ```
 
-Execute esse código no prompt de comando
+Execute esse código no prompt de comando 
+
+Copie o endereço gerado e adicione no browser
+![image](https://github.com/user-attachments/assets/38740ca3-404b-4636-a375-a8899fa86c0a)
+
+![image](https://github.com/user-attachments/assets/2e10cdfc-2c81-468b-8ad7-7c028d727e93)
+
+
+
 
 
 
