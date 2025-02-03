@@ -268,9 +268,8 @@ Cole o código Python adaptado no campo de script.
 
 ![image](https://github.com/user-attachments/assets/c9754a84-131f-4c15-855d-5d0b2f69d036)
 
+![image](https://github.com/user-attachments/assets/80e314b6-b5f5-403a-b406-4d0c3490407b)
 
-
-![image](https://github.com/user-attachments/assets/b90f2ed7-98e9-4034-9080-55b00426cdb7)
 
 
 ```python
@@ -316,6 +315,8 @@ else:
 # Retornar o DataFrame para o Power BI
 top_artists_data
 ```
+
+![image](https://github.com/user-attachments/assets/b90f2ed7-98e9-4034-9080-55b00426cdb7)
 
 
 
