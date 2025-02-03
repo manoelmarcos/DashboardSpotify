@@ -147,12 +147,12 @@ Cole o código Python adaptado no campo de script.
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
 
-## Gere o token para acessar dados da API
+## Gere um código de autorização para acessar dados da API
 
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
 
-Crie o seguinte arquivo utilizando o notepad++ ou algum editor de código: 
+Crie o seguinte arquivo (javascript) utilizando o notepad++ ou algum editor de código: 
 
 **getSpotifyToken.js**
 
@@ -231,7 +231,32 @@ Execute esse script como o Node:
 
 (Verifique se o Note está instalado)
 
+![image](https://github.com/user-attachments/assets/ddbe9e9d-c13a-4c0a-b303-1f880a54b481)
 
+
+Crie o seguinte script python para gerar um token utilizando o notepad++ ou algum editor de código: 
+
+**getSpotifyToken.js**
+
+```sh
+import requests
+from urllib.parse import urlencode
+
+CLIENT_ID = "" // Adicione aqui seu client_id obtido pela aplicação que você criou no Dashboard Spotify
+REDIRECT_URI = "http://localhost:8888/callback"
+
+auth_url = "https://accounts.spotify.com/authorize?" + urlencode({
+    "client_id": CLIENT_ID,
+    "response_type": "code",
+    "redirect_uri": REDIRECT_URI,
+    "scope": "user-top-read user-read-recently-played" 
+})
+
+print("Acesse este link para autorizar:", auth_url)
+
+```
+
+Execute esse código no prompt de comando
 
 
 
