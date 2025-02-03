@@ -17,8 +17,7 @@ Passo a passo:
 
 3. Se o python não estiver instalado, siga esses passos:
 
-   - Baixe o Instalador
-   - Acesse o site oficial do Python:
+   - Baixe o Instalador, acessando o site oficial do Python:
          🔗 https://www.python.org/downloads/
    - Clique no botão Download Python X.X.X (a versão mais recente disponível).
    - Abra o arquivo .exe que foi baixado.
@@ -27,24 +26,21 @@ Passo a passo:
 
 ##  Instale as bibliotecas necessárias
 
+1. Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
+
 pip install spotipy
 
    ![image](https://github.com/user-attachments/assets/bd23d354-e75a-46e0-bf94-a04702143ec1)
 
-Instalar o pacote necessário no ambiente Python do Power BI:
-
-Abra o terminal ou prompt de comando e execute o seguinte comando para instalar o matplotlib e outras dependências que possam estar faltando:
+2. Instalar os pacotes necessários no ambiente Python:
 
 pip install matplotlib pandas requests
+![image](https://github.com/user-attachments/assets/8937eaf7-1cd4-410b-ad2b-ec7a1c1d81c4)
 
-5. Verifique o caminho que o Python está instalado:
+3. Verifique o caminho que o Python está instalado:
 
 where python
 ![image](https://github.com/user-attachments/assets/b0d65726-5e2e-4407-962f-867db9a76d47)
-
-2. Certifique-se de que as bibliotecas requests e o pandas estão instalados:
-
-pip install requests pandas
 
 
 ## Crie uma aplicação no Spotify Developer Dashboard 
@@ -64,7 +60,7 @@ fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
 
-Verificar o ambiente Python no Power BI:
+# Verificar o ambiente Python no Power BI:
 
 O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
 
@@ -73,7 +69,7 @@ Em Opções, navegue até Script Python.
 Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
 
 
-1️⃣ Crie um aplicativo no Spotify Developer
+# Crie um aplicativo no Spotify Developer
 - Acesse Spotify Developer Dashboard.
 - Faça login com sua conta do Spotify.
 - Clique em "Create an App".
@@ -85,13 +81,6 @@ Para gerar um token com o escopo user-top-read no Spotify, siga este passo a pas
 
 🚀 Passo a passo para gerar um token com user-top-read
 Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
-
-1️⃣ Crie um aplicativo no Spotify Developer
-Acesse Spotify Developer Dashboard.
-Faça login com sua conta do Spotify.
-Clique em "Create an App".
-Dê um nome ao app (exemplo: MeuAppSpotify) e uma descrição.
-Clique em "Create" e aceite os termos.
 
 
 2️⃣ Obtenha seu Client ID e Client Secret
@@ -129,6 +118,10 @@ Clique em Save.
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
 
+6. Salve os seguintes scripts
+
+
+
 5. Use um editor de texto ou de código para criar o seguinte código:
 
 
@@ -145,11 +138,6 @@ Em "Detecção automática", verifique se o Power BI está reconhecendo seu Pyth
 Se necessário, selecione manualmente o caminho onde o Python está instalado.
 🔹 Dica: Recomendo usar a versão mais recente do Python 3.9 ou superior.
 
-
-✅ 5. Atualize os Pacotes do Python
-No terminal, rode os comandos abaixo para garantir que suas bibliotecas estão atualizadas:
-
-pip install --upgrade requests pandas
 
 
 Passo 2: Integrar ao Power BI
