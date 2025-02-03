@@ -332,7 +332,8 @@ Após o carregamento da tabela com o top 10 artistas, basta apenas configurar os
 
 ![image](https://github.com/user-attachments/assets/5dbe2baa-df85-4e2e-b6b9-75f04ea8d1ba)
 
-
+Dashboard Final
+![image](https://github.com/user-attachments/assets/ee5a3076-3109-4dbe-bb5c-b774d43036e2)
 
 
 
