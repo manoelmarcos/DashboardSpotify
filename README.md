@@ -152,7 +152,10 @@ Rode o código Python diretamente (sem PowerShell, se possível).
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
 
-Crie o seguinte arquivo: 
+Crie o seguinte arquivo utilizando o notepad++ ou algum editor de código: 
+
+**getSpotifyToken.js**
+
 ```sh
 const express = require('express');
 const querystring = require('querystring');
@@ -162,8 +165,8 @@ const crypto = require('crypto');
 const app = express();
 const port = 8888;
 
-const client_id = '8a068eccf6c04fd48c02835dd2f00feb';
-const client_secret = 'c8942b0823414f91be6ca787b96e241d'; // 🔴 Não compartilhe essa informação publicamente!
+const client_id = ''; // Adicione aqui seu client_id obtido pela aplicação que você criou no Dashboard Spotify
+const client_secret = ''; // Adicione aqui seu client_id obtido pela aplicação que você criou no Dashboard Spotify 🔴 Não compartilhe essa informação publicamente!
 const redirect_uri = 'http://localhost:8888/callback';
 
 // Função para gerar string aleatória
@@ -223,6 +226,10 @@ app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
 ```
+
+Execute esse script como o Node:
+
+(Verifique se o Note está instalado)
 
 
 
