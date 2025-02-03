@@ -2,7 +2,7 @@
 
 ## Configurando sua API para obter os dados do Spotify 
 
-Para integrar os dados dos artistas mais ouvidas no Spotify com o Power BI, você pode usar a API do Spotify para obter as informações e, em seguida, criar uma tabela no Power BI. O script em Python a seguir utiliza a biblioteca spotipy, que é uma forma simples de acessar a API do Spotify.
+Para integrar os dados dos artistas mais ouvidas de sua conta no Spotify com o Power BI, você pode usar a API do Spotify para obter as informações e, em seguida, obter uma tabela no Power BI. O script em Python a seguir utiliza a biblioteca spotipy, que é uma forma simples de acessar a API do Spotify.
 
 Passo a passo:
 
