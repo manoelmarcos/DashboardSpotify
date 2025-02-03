@@ -253,8 +253,9 @@ Se necessário, selecione manualmente o caminho onde o Python está instalado.
 ![image](https://github.com/user-attachments/assets/28f3e880-3fcb-4e8f-b1a7-19c27ee1dfa2)
 
 
-Passo 2: Integrar ao Power BI
-Para integrar o código Python ao Power BI e obter as playlists do Spotify:
+- Obtendo os dados dos artistas mais ouvido em sua conta do Spotify
+
+Para integrar o código Python ao Power BI e obter os artistas mais ouvidos em sua conta do  Spotify:
 
 Adicione um script Python no Power BI:
 
@@ -269,7 +270,6 @@ Cole o código Python adaptado no campo de script.
 ![image](https://github.com/user-attachments/assets/c9754a84-131f-4c15-855d-5d0b2f69d036)
 
 ![image](https://github.com/user-attachments/assets/80e314b6-b5f5-403a-b406-4d0c3490407b)
-
 
 
 ```python
@@ -321,6 +321,18 @@ top_artists_data
 
 
 ![image](https://github.com/user-attachments/assets/fc44de3a-9552-47a3-adcf-0a6ac94c732d)
+
+
+- Criando a visualização final
+
+Agora é possível criar a visualização final:
+
+-Utilize o background que está anexado neste repositório:
+
+Após o carregamento da tabela com o top 10 artistas, basta apenas configurar os cards (arquivo PBIX disponível nesse repositório)
+
+![image](https://github.com/user-attachments/assets/5dbe2baa-df85-4e2e-b6b9-75f04ea8d1ba)
+
 
 
 
