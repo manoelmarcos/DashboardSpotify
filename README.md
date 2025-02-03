@@ -61,21 +61,7 @@ Para obter o Client ID e Client Secret, acesse:
 
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
-# Verificar o ambiente Python no Power BI:
-
-O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
-
-No Power BI, vá em Arquivo > Opções e configurações > Opções.
-Em Opções, navegue até Script Python.
-Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
-
-Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
-
-🚀 Passo a passo para gerar um token com user-top-read
-Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
-
-
-2️⃣ Obtenha seu Client ID e Client Secret
+# Obtenha seu Client ID e Client Secret
 No dashboard, clique no app que você criou.
 Vá até a aba "Settings".
 Copie o Client ID e o Client Secret.
@@ -105,6 +91,23 @@ Clique em Save.
 ![image](https://github.com/user-attachments/assets/6115bee0-c8ae-4bb1-9b84-3df0600901e4)
 
 ![image](https://github.com/user-attachments/assets/4132a9d7-c128-4cf7-84f1-b61225237fda)
+
+
+
+
+# Verificar o ambiente Python no Power BI:
+
+O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
+
+No Power BI, vá em Arquivo > Opções e configurações > Opções.
+Em Opções, navegue até Script Python.
+Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
+
+Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
+
+🚀 Passo a passo para gerar um token com user-top-read
+Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
+
 
 
 4. Crie uma pasta local, por exemplo:
