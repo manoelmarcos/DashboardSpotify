@@ -91,16 +91,15 @@ Vá até "Edit Settings".
 ![image](https://github.com/user-attachments/assets/4132a9d7-c128-4cf7-84f1-b61225237fda)
 
 
-
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
 
 ## Gere um código de autorização para acessar dados da API
 
-4. Crie uma pasta local, por exemplo:
+- Crie uma pasta local, por exemplo:
      c:\spotify-token
    
-Você vai precisar de dois script, um em javascript e outro em python
+- Você vai precisar de dois script, um em javascript e outro em python
 
 Crie o seguinte arquivo (javascript) utilizando o notepad++ ou algum editor de código: 
 
