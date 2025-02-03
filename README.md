@@ -41,6 +41,7 @@ pip install matplotlib pandas requests
 3. Verifique o caminho que o Python está instalado:
 
 where python
+
 ![image](https://github.com/user-attachments/assets/b0d65726-5e2e-4407-962f-867db9a76d47)
 
 
@@ -58,7 +59,6 @@ where python
 
 Para obter o Client ID e Client Secret, acesse: 
 
-fig3
 ![image](https://github.com/user-attachments/assets/1fa3bc82-3348-4aa7-8485-153847880a48)
 
 # Verificar o ambiente Python no Power BI:
@@ -125,11 +125,19 @@ Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
 ## Verifique se o Python está corretamente instalado no Power BI
 
 No Power BI, vá em "Arquivo" → "Opções e Configurações" → "Opções".
+
 Vá até "Scripts do Python".
+
+
+![image](https://github.com/user-attachments/assets/58ca8c5c-da76-4c59-9825-450bacc1f339)
+
+
+
 Em "Detecção automática", verifique se o Power BI está reconhecendo seu Python instalado.
 Se necessário, selecione manualmente o caminho onde o Python está instalado.
 🔹 Dica: Recomendo usar a versão mais recente do Python 3.9 ou superior.
 
+![image](https://github.com/user-attachments/assets/28f3e880-3fcb-4e8f-b1a7-19c27ee1dfa2)
 
 
 Passo 2: Integrar ao Power BI
