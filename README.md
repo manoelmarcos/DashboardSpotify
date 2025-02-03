@@ -60,7 +60,6 @@ where python
 - Em "Redirect URIs", adicione:
 - http://localhost:8888/callback
 - Clique em Save.
-
 - Clique em "Create" e aceite os termos.
 
 Para obter o Client ID e Client Secret, acesse: 
@@ -93,57 +92,6 @@ Vá até "Edit Settings".
 
 
 
-# Verificar o ambiente Python no Power BI:
-
-O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
-
-No Power BI, vá em Arquivo > Opções e configurações > Opções.
-Em Opções, navegue até Script Python.
-Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
-
-Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
-
-🚀 Passo a passo para gerar um token com user-top-read
-Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
-
-
-5. Use um editor de texto ou de código para criar o seguinte código:
-
-
-1️⃣ Criar um Script Python no Power BI
-No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
-Clique em Nova Fonte → Script do Python.
-Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
-
-
-## Verifique se o Python está corretamente instalado no Power BI
-
-No Power BI, vá em "Arquivo" → "Opções e Configurações" → "Opções".
-
-Vá até "Scripts do Python".
-
-
-![image](https://github.com/user-attachments/assets/58ca8c5c-da76-4c59-9825-450bacc1f339)
-
-
-
-Em "Detecção automática", verifique se o Power BI está reconhecendo seu Python instalado.
-Se necessário, selecione manualmente o caminho onde o Python está instalado.
-🔹 Dica: Recomendo usar a versão mais recente do Python 3.9 ou superior.
-
-![image](https://github.com/user-attachments/assets/28f3e880-3fcb-4e8f-b1a7-19c27ee1dfa2)
-
-
-Passo 2: Integrar ao Power BI
-Para integrar o código Python ao Power BI e obter as playlists do Spotify:
-
-Adicione um script Python no Power BI:
-
-No Power BI Desktop, clique em Transformar Dados.
-No Editor de Consultas, clique em Transformar Dados > Script Python.
-Cole o código Python adaptado no campo de script.
-
-
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
 
@@ -151,6 +99,8 @@ Rode o código Python diretamente (sem PowerShell, se possível).
 
 4. Crie uma pasta local, por exemplo:
      c:\spotify-token
+   
+Você vai precisar de dois script, um em javascript e outro em python
 
 Crie o seguinte arquivo (javascript) utilizando o notepad++ ou algum editor de código: 
 
@@ -238,7 +188,7 @@ Crie o seguinte script python para gerar um token utilizando o notepad++ ou algu
 
 **getSpotifyToken.js**
 
-```sh
+```python
 import requests
 from urllib.parse import urlencode
 
@@ -263,6 +213,107 @@ Copie o endereço gerado e adicione no browser
 
 ![image](https://github.com/user-attachments/assets/2e10cdfc-2c81-468b-8ad7-7c028d727e93)
 
+
+
+# Verificar o ambiente Python no Power BI:
+
+O Power BI usa o Python que está instalado no seu computador. Certifique-se de que você está usando o mesmo ambiente Python no Power BI em que você instalou o pacote. Para verificar, siga esses passos:
+
+No Power BI, vá em Arquivo > Opções e configurações > Opções.
+Em Opções, navegue até Script Python.
+Verifique o caminho do Python que está configurado no Power BI e garanta que seja o mesmo onde você instalou os pacotes.
+
+Para gerar um token com o escopo user-top-read no Spotify, siga este passo a passo detalhado:
+
+🚀 Passo a passo para gerar um token com user-top-read
+Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
+
+
+5. Use um editor de texto ou de código para criar o seguinte código:
+
+
+1️⃣ Criar um Script Python no Power BI
+No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
+Clique em Nova Fonte → Script do Python.
+Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
+
+## Verifique se o Python está corretamente instalado no Power BI
+
+No Power BI, vá em "Arquivo" → "Opções e Configurações" → "Opções".
+
+Vá até "Scripts do Python".
+
+![image](https://github.com/user-attachments/assets/58ca8c5c-da76-4c59-9825-450bacc1f339)
+
+
+Em "Detecção automática", verifique se o Power BI está reconhecendo seu Python instalado.
+Se necessário, selecione manualmente o caminho onde o Python está instalado.
+🔹 Dica: Recomendo usar a versão mais recente do Python 3.9 ou superior.
+
+![image](https://github.com/user-attachments/assets/28f3e880-3fcb-4e8f-b1a7-19c27ee1dfa2)
+
+
+Passo 2: Integrar ao Power BI
+Para integrar o código Python ao Power BI e obter as playlists do Spotify:
+
+Adicione um script Python no Power BI:
+
+No Power BI Desktop, clique em Transformar Dados.
+No Editor de Consultas, clique em Transformar Dados > Script Python.
+Cole o código Python adaptado no campo de script.
+
+![image](https://github.com/user-attachments/assets/f76ff1b5-b705-43b9-83c7-a8ea75f7ffa9)
+
+![image](https://github.com/user-attachments/assets/8d8c31d7-d3b9-4475-a9f3-8cf5a2268548)
+
+![image](https://github.com/user-attachments/assets/c9754a84-131f-4c15-855d-5d0b2f69d036)
+
+![image](https://github.com/user-attachments/assets/fc44de3a-9552-47a3-adcf-0a6ac94c732d)
+
+
+```python
+
+import requests
+import pandas as pd
+
+# Insira seu token de acesso gerado com o escopo 'user-top-read'
+token = "" -- adicione aqui o token gerado pelo script GeraToken.py
+
+# URL da API do Spotify para obter os top artistas dos últimos 12 meses
+url = "https://api.spotify.com/v1/me/top/artists?limit=10&time_range=long_term"
+
+# Cabeçalhos da requisição
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+# Fazer a requisição à API
+response = requests.get(url, headers=headers)
+
+# Verificar se a resposta foi bem-sucedida (status 200)
+if response.status_code == 200:
+    data = response.json()
+    
+    # Criar DataFrame com os artistas mais ouvidos
+    top_artists_data = pd.DataFrame([
+        {
+            "Posição": i + 1,
+            "Nome do Artista": artist["name"],
+            "Popularidade": artist["popularity"],
+            "Gêneros": ", ".join(artist["genres"]),
+            "Seguidores": artist["followers"]["total"],
+            "URL Spotify": artist["external_urls"]["spotify"],
+            "Imagem do Artista": artist["images"][0]["url"] if artist["images"] else None
+        }
+        for i, artist in enumerate(data["items"])
+    ])
+    
+else:
+    print(f"Erro {response.status_code}: {response.json()}")
+
+# Retornar o DataFrame para o Power BI
+top_artists_data
+```
 
 
 
