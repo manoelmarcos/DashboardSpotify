@@ -107,12 +107,6 @@ Para gerar um token com o escopo user-top-read no Spotify, siga este passo a pas
 Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do Spotify.
 
 
-4. Crie uma pasta local, por exemplo:
-     c:\spotify-token
-
-6. Salve os seguintes scripts
-
-
 5. Use um editor de texto ou de código para criar o seguinte código:
 
 
@@ -120,7 +114,6 @@ Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do 
 No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
 Clique em Nova Fonte → Script do Python.
 Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
-
 
 
 ## Verifique se o Python está corretamente instalado no Power BI
@@ -154,7 +147,82 @@ Cole o código Python adaptado no campo de script.
 Abra o terminal ou Prompt de Comando.
 Rode o código Python diretamente (sem PowerShell, se possível).
 
+## Gere o token para acessar dados da API
 
+4. Crie uma pasta local, por exemplo:
+     c:\spotify-token
+
+Crie o seguinte arquivo: 
+```sh
+const express = require('express');
+const querystring = require('querystring');
+const axios = require('axios'); // Para fazer requisições HTTP
+const crypto = require('crypto');
+
+const app = express();
+const port = 8888;
+
+const client_id = '8a068eccf6c04fd48c02835dd2f00feb';
+const client_secret = 'c8942b0823414f91be6ca787b96e241d'; // 🔴 Não compartilhe essa informação publicamente!
+const redirect_uri = 'http://localhost:8888/callback';
+
+// Função para gerar string aleatória
+function generateRandomString(length) {
+  return crypto.randomBytes(length).toString('hex').slice(0, length);
+}
+
+// Página de login
+app.get('/login', (req, res) => {
+  const state = generateRandomString(16);
+  const scope = 'user-read-private user-read-email playlist-read-private playlist-read-collaborative user-top-read';
+
+  res.redirect('https://accounts.spotify.com/authorize?' +
+    querystring.stringify({
+      response_type: 'code',
+      client_id: client_id,
+      scope: scope,
+      redirect_uri: redirect_uri,
+      state: state
+    }));
+});
+
+// Rota de callback (processa o código de autorização e troca pelo token de acesso)
+app.get('/callback', async (req, res) => {
+  const code = req.query.code || null;
+
+  if (!code) {
+    return res.status(400).send('Código de autorização ausente!');
+  }
+
+  try {
+    const response = await axios.post('https://accounts.spotify.com/api/token',
+      querystring.stringify({
+        grant_type: 'authorization_code',
+        code: code,
+        redirect_uri: redirect_uri,
+        client_id: client_id,
+        client_secret: client_secret
+      }), {
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      });
+
+    const { access_token, refresh_token } = response.data;
+    
+    res.send(`
+      <h1>Autenticação bem-sucedida!</h1>
+      <p>Access Token: ${access_token}</p>
+      <p>Refresh Token: ${refresh_token}</p>
+    `);
+  } catch (error) {
+    console.error('Erro ao obter token:', error.response ? error.response.data : error.message);
+    res.status(500).send('Erro ao processar o login');
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});
+```
 
 
 
