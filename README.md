@@ -268,7 +268,9 @@ Cole o código Python adaptado no campo de script.
 
 ![image](https://github.com/user-attachments/assets/c9754a84-131f-4c15-855d-5d0b2f69d036)
 
-![image](https://github.com/user-attachments/assets/fc44de3a-9552-47a3-adcf-0a6ac94c732d)
+
+
+![image](https://github.com/user-attachments/assets/b90f2ed7-98e9-4034-9080-55b00426cdb7)
 
 
 ```python
@@ -317,7 +319,7 @@ top_artists_data
 
 
 
-
+![image](https://github.com/user-attachments/assets/fc44de3a-9552-47a3-adcf-0a6ac94c732d)
 
 
 
