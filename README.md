@@ -231,11 +231,6 @@ Esse escopo permite acessar as músicas e artistas mais tocados na sua conta do 
 5. Use um editor de texto ou de código para criar o seguinte código:
 
 
-1️⃣ Criar um Script Python no Power BI
-No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
-Clique em Nova Fonte → Script do Python.
-Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
-
 ## Verifique se o Python está corretamente instalado no Power BI
 
 No Power BI, vá em "Arquivo" → "Opções e Configurações" → "Opções".
@@ -252,10 +247,16 @@ Se necessário, selecione manualmente o caminho onde o Python está instalado.
 ![image](https://github.com/user-attachments/assets/28f3e880-3fcb-4e8f-b1a7-19c27ee1dfa2)
 
 
-- Obtendo os dados dos artistas mais ouvido em sua conta do Spotify
+# Obtendo os dados dos artistas mais ouvido em sua conta do Spotify
 
 Para integrar o código Python ao Power BI e obter os artistas mais ouvidos em sua conta do  Spotify:
 
+
+- Criar um Script Python no Power BI
+No Power BI, vá até "Transformar Dados" > "Editor de Consultas".
+Clique em Nova Fonte → Script do Python.
+
+Cole um script Python para fazer chamadas na API do Spotify e trazer os dados.
 Adicione um script Python no Power BI:
 
 No Power BI Desktop, clique em Transformar Dados.
@@ -322,7 +323,7 @@ top_artists_data
 ![image](https://github.com/user-attachments/assets/fc44de3a-9552-47a3-adcf-0a6ac94c732d)
 
 
-- Criando a visualização final
+# Criando a visualização final
 
 Agora é possível criar a visualização final:
 
