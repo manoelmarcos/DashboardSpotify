@@ -351,6 +351,9 @@ Via Pix: Envie a doação para a minha chave Pix: a7fcd974-97a8-4a11-a8fe-cd4e01
 
 Via PayPal: Clique no link para fazer uma doação: [https://www.paypal.com/donate/?business=XHNZJAJU3MG58&no_recurring=0&item_name=Seu+apoio+%C3%A9+muito+importante+para+eu+continuar+criando+conte%C3%BAdos+de+qualidade+e+ajudar+mais+pessoas+a+aprender.%0A&currency_code=BRL]
 
+<img width="128" height="128" alt="QR Code" src="https://github.com/user-attachments/assets/9eaf16f3-d2c1-4ca1-8875-449722cbfe16" />
+
+
 Seu apoio é muito importante para eu continuar criando conteúdos de qualidade e ajudar mais pessoas a aprender.
 
 Muito obrigado! 🙏
