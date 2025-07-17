@@ -345,11 +345,16 @@ Dashboard Final
 
 Se você está gostando do conteúdo gratuito e quer apoiar meu trabalho, pode me oferecer um café ☕️ com uma doação rápida e segura!
 
-Como doar:
+## Como doar
 
-Via Pix: Envie a doação para a minha chave Pix: a7fcd974-97a8-4a11-a8fe-cd4e01af668f
+**Via Pix:**  
+Envie a doação para a minha chave Pix:  
+`a7fcd974-97a8-4a11-a8fe-cd4e01af668f`
 
-Via PayPal: Clique no link para fazer uma doação: [https://www.paypal.com/donate/?business=XHNZJAJU3MG58&no_recurring=0&item_name=Seu+apoio+%C3%A9+muito+importante+para+eu+continuar+criando+conte%C3%BAdos+de+qualidade+e+ajudar+mais+pessoas+a+aprender.%0A&currency_code=BRL]
+---
+
+**Via PayPal:**  
+[![Doe pelo PayPal](https://img.shields.io/badge/Doar%20pelo-PayPal-005EA6?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=XHNZJAJU3MG58&no_recurring=0&item_name=Seu+apoio+%C3%A9+muito+importante+para+eu+continuar+criando+conte%C3%BAdos+de+qualidade+e+ajudar+mais+pessoas+a+aprender.&currency_code=BRL)
 
 <img width="128" height="128" alt="QR Code" src="https://github.com/user-attachments/assets/9eaf16f3-d2c1-4ca1-8875-449722cbfe16" />
 
